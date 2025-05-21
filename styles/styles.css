@@ -1,61 +1,85 @@
+:root {
+    --primary-color: darkblue;
+    --nav-link-color: white;
+    --nav-padding: 10px;
+    --nav-link-padding: 20px;
+    --h1-color: darkblue;
+    --img-width: 150px;
+    --img-border: 1px solid black;
+    --img-padding: 2px;
+    --img-shadow: 0 0 30px;
+    --main-max-width: 840px;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+    --aside-border: 1px solid rgb(0 0 0 / 0.2);
+    --aside-padding: 1rem;
+    --aside-bg: #eee;
+    --aside-text: #333;
+    --aside-img-width: 200px;
+    --footer-margin-top: 15px;
+    --footer-border-top: 1px solid #000;
+    --p-padding: 10px;
+
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--nav-padding);
     ;
 }
 
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
-    padding: 20px;
+    padding: var(--nav-link-padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--h1-color);
 }
 
 img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px;
+    border: var(--img-border);
+    padding: var(--img-padding);
+    box-shadow: var(--img-shadow);
 }
 
 p {
-    padding: 10px;
+    padding: var(--p-padding);
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
+    border: var(--aside-border);
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg);
+    color: var(--aside-text);
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: var(--aside-img-width);
     height: auto;
 }
 
 main img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
 }
 
 p {
-    padding: 0;
+    padding: var(--p-padding);
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: var(--footer-border-top);
     text-align: center;
 }
