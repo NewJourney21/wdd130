@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="description" content="Get in touch with White Water Rafting Co. for questions, reservations, or feedback." >
-  <meta name="author" content="Your Name" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Contact Us - White Water Rafting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&display=swap" rel="stylesheet" >
-  <link rel="stylesheet" href="styles/rafting.css" >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Whitewater Rafting for questions, reservations, and suggestions." />
+  <title>Contact Us - Whitewater Rafting</title>
+  <link rel="stylesheet" href="rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/rafting-logo.png" alt="Rafting Site Logo" width="100" >
-    <h1>White Water Rafting Co.</h1>
+    <img src="images/logo.png" alt="Whitewater Rafting Logo" />
+    <h1>Whitewater Rafting</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </nav>    
-<main>      
-     <section class="contact-info">
-  <h2>Contact Information</h2>
-  <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City, USA</p>
-  <p><strong>Phone:</strong> (555) 123-4567</p>
-  <p><strong>Email:</strong> info@whitewaterraftingco.com</p>
+        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h3>Find Us Here:</h3>
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!..." 
-    width="100%" height="300" loading="lazy" allowfullscreen 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</section>
-<section class="employees">
-  <h2>Meet Our Team</h2>
-  <div class="employee-gallery">
-    <figure>
-      <img src="images/employee1.jpg" alt="Jane Doe - Tour Guide">
-      <figcaption>Jane Doe - Tour Guide</figcaption>
-    </figure>
-    <figure>
-      <img src="images/employee2.jpg" alt="John Smith - Reservation Specialist">
-      <figcaption>John Smith - Reservation Specialist</figcaption>
-    </figure>
-    <figure>
-      <img src="images/employee3.jpg" alt="Samantha Ray - Customer Support">
-      <figcaption>Samantha Ray - Customer Support</figcaption>
-    </figure>
-  </div>
+  <main>
+    <section id="company-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 Riverbend Lane, Boulder, CO 80302</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-</section>
+      <div id="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.758717031968!2d-105.2705462846238!3d40.01498527942512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b815d08b36cbd%3A0x5698b41b62ef7a52!2sBoulder%2C%20CO%2080302!5e0!3m2!1sen!2sus!4v1686450680903!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map showing Whitewater Rafting location"
+        ></iframe>
+      </div>
+    </section>
 
-<section class="contact-form">
-  <h2>Send Us a Message</h2>
-  <form action="#" method="post">
-    <label for="username">Name:</label>
-    <input type="text" id="username" name="username" required>
+    <section id="employees">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Jane Doe - Operations Manager" />
+        <figcaption>Jane Doe, Operations Manager</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="John Smith - Lead Guide" />
+        <figcaption>John Smith, Lead Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Emily Johnson - Customer Service" />
+        <figcaption>Emily Johnson, Customer Service</figcaption>
+      </figure>
+    </section>
 
-    <label for="useremail">Email:</label>
-    <input type="email" id="useremail" name="useremail" required>
+    <section id="contact-form-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
 
-    <p>Purpose of Message:</p>
-    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
 
-    <label for="usermessage">Message:</label>
-    <textarea id="usermessage" name="usermessage" rows="5" required></textarea>
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <input type="radio" id="general" name="purpose" value="General Inquiry" required />
+          <label for="general">General Inquiry</label>
 
-    <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label><br><br>
+          <input type="radio" id="reservation" name="purpose" value="Reservation Question" />
+          <label for="reservation">Reservation Question</label>
 
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+          <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" />
+          <label for="suggestion">Website Suggestion</label>
+        </fieldset>
 
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
-</main>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-<footer>
-  <p>&copy; 2025 White Water Rafting Co. | Portia</p>
-  <p><a href="https://your-moqups-link.com" target="_blank">View Contact Us Page Wireframe</a></p>
-  <nav class="socialmedia">
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-  </nav>
-</footer>
+  <footer>
+    <p>&copy; 2025 Whitewater Rafting. All rights reserved.</p>
+    <p><a href="https://moqups.com/yourusername/yourwireframe" target="_blank" rel="noopener noreferrer">Contact Us Wireframe</a></p>
+  </footer>
+</body>
+</html>
