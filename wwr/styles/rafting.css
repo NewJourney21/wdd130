@@ -1,4 +1,137 @@
-/* Employee profiles */
+
+:root {
+  --primary-color: #0c4a6e;
+  --secondary-color: #38bdf8;
+  --accent-color: #fcd34d;
+  --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.newsletter {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  width: 250px;
+  max-width: 100%;
+  border: none;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 #employees {
   display: flex;
   justify-content: space-between;
@@ -27,7 +160,7 @@
   color: var(--primary-color);
 }
 
-/* Contact form */
+
 #contact-form {
   background-color: #fff;
   padding: 20px 16px;
@@ -89,7 +222,7 @@
   background-color: var(--primary-color);
 }
 
-/* Google Map */
+
 #map-container iframe {
   width: 100%;
   max-width: 600px;
